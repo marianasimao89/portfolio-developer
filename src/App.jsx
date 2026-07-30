@@ -1,7 +1,7 @@
 import "./App.css";
 import Hero from "./components/Hero.jsx";
-import Projects from "./components/Projects.jsx";
 import Skillset from "./components/Skillset.jsx";
+import Projects from "./components/Projects.jsx";
 import Education from "./components/Education.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
