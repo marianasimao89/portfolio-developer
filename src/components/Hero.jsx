@@ -26,7 +26,7 @@ function Hero() {
 
       <div className="hero-links">
         <a
-          href="https://github.com/YOUR_USERNAME"
+          href="https://github.com/marianasimao89"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -35,7 +35,7 @@ function Hero() {
         </a>
 
         <a
-          href="https://linkedin.com/in/YOUR_USERNAME"
+          href="https://www.linkedin.com/in/marianasimao/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

@@ -1,9 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+VN+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* General */
 
 main {
   width: min(1100px, 90%);
   margin: 0 auto;
+}
+
+section {
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: overline;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
 }
 
 /* Hero */
@@ -16,18 +39,17 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .hero-introduction {
-  font-size: 30px;
   padding-bottom: 10px;
+  font-size: 30px;
 }
 
 .hero-introduction-name {
+  padding-bottom: 60px;
   font-family: "Playwrite VN Guides", cursive;
   font-size: 40px;
-  padding-bottom: 60px;
 }
 
 .hero-image img {
@@ -40,7 +62,7 @@ main {
 .hero-title {
   padding-top: 30px;
   font-size: 25px;
-  font-weight: 00px;
+  font-weight: 400;
 }
 
 .hero-subtitle {
@@ -48,8 +70,8 @@ main {
 }
 
 .hero-description {
-  padding-top: 30px;
   max-width: 600px;
+  padding-top: 30px;
   font-size: 15px;
 }
 
@@ -68,21 +90,18 @@ main {
 /* Skills */
 
 .skillset {
-  text-align: center;
-  padding: 10px 100px 60px 100px;
+  padding: 10px 100px 60px;
 }
 
 .skillset h2 {
   margin-top: 60px;
-  font-size: 18px;
-  text-decoration: overline;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-  gap: 25px;
   justify-items: center;
+  gap: 25px;
   margin-top: 20px;
 }
 
@@ -98,15 +117,6 @@ main {
 }
 
 /* Projects */
-
-.projects {
-  text-align: center;
-}
-
-.projects h2 {
-  font-size: 18px;
-  text-decoration: overline;
-}
 
 .project {
   max-width: 650px;
@@ -128,36 +138,19 @@ main {
 }
 
 .project-technologies {
-  font-size: 10px;
   margin-bottom: 10px;
+  font-size: 10px;
 }
 
-.project-links {
-  font-size: 16px;
-}
-
+.project-links,
 .project-links a {
-  color: inherit;
-  transition: opacity 0.2s ease;
   font-size: 13px;
-  text-decoration: underline;
-}
-
-.project-links a:hover {
-  opacity: 0.7;
 }
 
 /* Education */
 
 .education {
   margin-top: 50px;
-  text-align: center;
-}
-
-.education h2 {
-  font-size: 18px;
-  text-decoration: overline;
-  margin-bottom: 10px;
 }
 
 .education-item {
@@ -166,9 +159,9 @@ main {
 }
 
 .education-item h3 {
-  font-weight: 500;
-  font-size: 16px;
   margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .education-details {
@@ -176,28 +169,10 @@ main {
   font-size: 10px;
 }
 
-.education a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: opacity 0.2s ease;
-}
-
-.education a:hover {
-  opacity: 0.7;
-}
-
 /* About */
 
 .about {
   padding: 60px 0;
-  text-align: center;
-}
-
-.about h2 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  text-decoration: overline;
 }
 
 .about-content {
@@ -218,32 +193,17 @@ main {
 
 .contact {
   padding: 20px 0;
-  text-align: center;
-}
-
-.contact h2 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  text-decoration: overline;
 }
 
 .contact-text {
   max-width: 500px;
   margin: 0 auto;
-  line-height: 1.8;
   font-size: 14px;
+  line-height: 1.8;
 }
 
 .contact-email {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: opacity 0.2s ease;
   font-size: 14px;
-}
-
-.contact-email:hover {
-  opacity: 0.7;
 }
 
 /* Footer */
@@ -258,25 +218,104 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
   flex-wrap: wrap;
+  gap: 6px;
 }
 
 .footer a {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: opacity 0.2s ease;
-}
-
-.footer a:hover {
-  opacity: 0.7;
 }
 
 .footer img {
   width: 20px;
   height: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  main {
+    width: min(100%, 92%);
+  }
+
+  .hero-container {
+    min-height: auto;
+    padding: 50px 0 80px;
+  }
+
+  .hero-introduction {
+    font-size: 24px;
+  }
+
+  .hero-introduction-name {
+    padding-bottom: 40px;
+    font-size: 32px;
+  }
+
+  .hero-image img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .hero-role {
+    font-size: 16px;
+  }
+
+  .skillset {
+    padding: 20px 0 60px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 16px;
+  }
+
+  .about-content,
+  .contact-text,
+  .project {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-introduction-name {
+    font-size: 28px;
+  }
+
+  .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-subtitle,
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .hero-role {
+    font-size: 14px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-content,
+  .contact-text {
+    font-size: 13px;
+  }
+
+  .footer p {
+    flex-direction: column;
+  }
 }

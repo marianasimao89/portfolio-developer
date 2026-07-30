@@ -6,7 +6,7 @@ function Footer() {
       <p>
         Designed and coded by me
         <a
-          href="https://github.com/yourusername/developer-portfolio"
+          href="https://github.com/marianasimao89/portfolio-developer"
           target="_blank"
           rel="noopener noreferrer"
         >

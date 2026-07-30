@@ -14,9 +14,7 @@ function Education() {
 
         <h3>Coding Bootcamp 2026</h3>
 
-        <div className="education-details">
-          HTML • CSS • JavaScript • React • Responsive
-        </div>
+        <div className="education-details">HTML • CSS • JavaScript • React</div>
       </div>
     </section>
   );
