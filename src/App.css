@@ -1,43 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+VN+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* General */
+
 main {
-  width: min(1200px, 90%);
+  width: min(1100px, 90%);
   margin: 0 auto;
 }
 
 /* Hero */
-.hero {
+
+.hero-container {
   min-height: 100vh;
+  padding-top: 65px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.hero h1 {
-  margin: 16px 0;
-  font-size: 64px;
-  line-height: 1.05;
+.hero-introduction {
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
-.hero-introduction,
+.hero-introduction-name {
+  font-family: "Playwrite VN Guides", cursive;
+  font-size: 40px;
+  padding-bottom: 60px;
+}
+
+.hero-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-title {
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: 00px;
+}
+
+.hero-subtitle {
+  font-size: 15px;
+}
+
 .hero-description {
-  margin: 0;
-}
-
-.hero-description {
+  padding-top: 30px;
   max-width: 600px;
-  line-height: 1.6;
+  font-size: 15px;
+}
+
+.hero-role {
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
 }
 
 /* Skills */
 
+.skillset {
+  text-align: center;
+  padding: 10px 100px 60px 100px;
+}
+
+.skillset h2 {
+  margin-top: 60px;
+  font-size: 18px;
+  text-decoration: overline;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill p {
+  font-size: 10px;
+}
+
 /* Projects */
+
+.projects {
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 18px;
+  text-decoration: overline;
+}
+
+.project {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.project:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.project h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.project-description {
+  font-size: 13px;
+}
+
+.project-technologies {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  font-size: 16px;
+}
+
+.project-links a {
+  color: inherit;
+  transition: opacity 0.2s ease;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.project-links a:hover {
+  opacity: 0.7;
+}
 
 /* Education */
 
+.education {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 18px;
+  text-decoration: overline;
+  margin-bottom: 10px;
+}
+
+.education-item {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.education-item h3 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.education-details {
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.education a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.education a:hover {
+  opacity: 0.7;
+}
+
 /* About */
+
+.about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-decoration: overline;
+}
+
+.about-content {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.about-content p {
+  line-height: 1.8;
+}
+
+.about-content p:first-child {
+  margin-bottom: 24px;
+}
 
 /* Contact */
 
+.contact {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-decoration: overline;
+}
+
+.contact-text {
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.contact-email {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+  font-size: 14px;
+}
+
+.contact-email:hover {
+  opacity: 0.7;
+}
+
 /* Footer */
 
-/* Responsive */
+.footer {
+  padding: 60px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+.footer img {
+  width: 20px;
+  height: 20px;
+}

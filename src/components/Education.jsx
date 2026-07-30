@@ -12,13 +12,11 @@ function Education() {
           className="education-logo"
         />
 
-        <h3>SheCodes</h3>
+        <h3>Coding Bootcamp 2026</h3>
 
-        <p>Front-End Development Program</p>
-
-        <p>HTML • CSS • JavaScript • React • Responsive Design</p>
-
-        <p>2026</p>
+        <div className="education-details">
+          HTML • CSS • JavaScript • React • Responsive
+        </div>
       </div>
     </section>
   );

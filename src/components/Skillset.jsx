@@ -71,7 +71,6 @@ function Skillset() {
   return (
     <section className="skillset">
       <h2>Skills</h2>
-
       <div className="skills-grid">
         {skills.map((skill) => (
           <div className="skill" key={skill.name}>

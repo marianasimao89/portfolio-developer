@@ -1,55 +1,36 @@
-import artistPortfolioImage from "../assets/projects/artist-portfolio.jpg";
-
-const projects = [
-  {
-    name: "Artist Portfolio",
-    image: artistPortfolioImage,
-    description:
-      "A responsive portfolio showcasing my paintings, exhibitions and artistic practice.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/yourusername/artist-portfolio",
-    live: "https://yourwebsite.com",
-  },
-];
-
 function Projects() {
+  const projects = [
+    {
+      name: "✶Kiki Sophia Artist Portfolio",
+      description:
+        "A responsive portfolio website showcasing my artwork, exhibitions and artistic practice.",
+      technologies: ["HTML", "CSS"],
+      website: "https://www.kikisophia.com",
+      websiteLabel: "kikisophia.com",
+    },
+  ];
+
   return (
     <section className="projects">
       <h2>Projects</h2>
 
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <div className="project-card" key={project.name}>
-            <img src={project.image} alt={project.name} />
+      {projects.map((project) => (
+        <article className="project" key={project.name}>
+          <h3>{project.name}</h3>
 
-            <h3>{project.name}</h3>
+          <p className="project-description">{project.description}</p>
 
-            <p>{project.description}</p>
+          <p className="project-technologies">
+            {project.technologies.join(" • ")}
+          </p>
 
-            <div className="project-technologies">
-              {project.technologies.map((technology) => (
-                <span className="technology" key={technology}>
-                  {technology}
-                </span>
-              ))}
-            </div>
-
-            <div className="project-links">
-              <a href={project.live} target="_blank" rel="noopener noreferrer">
-                Live
-              </a>
-
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
+          <p className="project-links">
+            <a href={project.website} target="_blank" rel="noreferrer">
+              {project.websiteLabel}
+            </a>
+          </p>
+        </article>
+      ))}
     </section>
   );
 }
